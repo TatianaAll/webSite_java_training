@@ -1,4 +1,4 @@
-package com.HRApplication.webapp;
+package com.hrApplication.webapp;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -9,13 +9,13 @@ import lombok.Data;
 
 @Data
 @SpringBootApplication
-public class WebappApplication implements CommandLineRunner {
+public class AppWebApplication implements CommandLineRunner {
 	
 	@Autowired
 	private CustomProperties properties;
 	
 	public static void main(String[] args) {
-		SpringApplication.run(WebappApplication.class, args)
+		SpringApplication.run(AppWebApplication.class, args);
 	}
 	
 	@Override
